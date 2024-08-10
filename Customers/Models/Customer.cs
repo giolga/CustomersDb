@@ -1,4 +1,4 @@
-﻿namespace Customers.Model
+﻿namespace Customers.Models
 {
     public class Customer
     {
