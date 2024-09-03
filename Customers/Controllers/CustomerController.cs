@@ -18,6 +18,7 @@ namespace Customers.Controllers
             this._config = config;
         }
 
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
@@ -27,6 +28,7 @@ namespace Customers.Controllers
 
             return Ok(customers);
         }
+
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
@@ -42,6 +44,7 @@ namespace Customers.Controllers
 
             return Ok(customer);
         }
+
 
         [HttpPost]
         public async Task<ActionResult<Customer>> InsertCustomer(CustomerDTO customerDto)
@@ -69,6 +72,7 @@ namespace Customers.Controllers
             return Ok($"CustomersTb with Id {id} was successfully updated! (CHAMA!)");
         }
 
+
         [HttpDelete]
         public async Task<ActionResult> DeleteTable()
         {
@@ -85,6 +89,7 @@ namespace Customers.Controllers
                 return BadRequest("Error! Couldn't Refresh Table!");
             }
         }
+
 
         [HttpDelete("{customerId}")]
         public async Task<ActionResult<Customer>> DeleteCustomer(int customerId)

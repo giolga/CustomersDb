@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\mikey\\desktop\\customersdb\\customers\\controllers\\customerproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\controllers\\customerproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\mikey\\desktop\\customersdb\\customers\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\mikey\\desktop\\customersdb\\customers\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomerProductsTb.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\mikey\\desktop\\customersdb\\customers\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\mikey\\desktop\\customersdb\\customers\\controllers\\customerproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\controllers\\customerproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomerProductsTb.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,27 +29,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.CustomerProductsTb [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomerProductsTb.sql",
-              "ToolTip": "dbo.CustomerProductsTb [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-09-03T13:15:38.903Z",
+              "DocumentIndex": 0,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Customers\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Models\\Customer.cs",
+              "RelativeToolTip": "Customers\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T13:25:47.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "dbo.CustomerProductsTb [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomerProductsTb.sql",
+              "ToolTip": "dbo.CustomerProductsTb [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-03T13:15:38.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Customers\\Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Customers\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAqwE4AAAA1AAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T12:22:23.02Z",
               "EditorCaption": ""
@@ -58,20 +74,20 @@
               "RelativeDocumentMoniker": "Customers\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Customers\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAIwFoAAAA1AAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwGgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T12:21:17.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CustomerProductController.cs",
               "DocumentMoniker": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Controllers\\CustomerProductController.cs",
               "RelativeDocumentMoniker": "Customers\\Controllers\\CustomerProductController.cs",
               "ToolTip": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Controllers\\CustomerProductController.cs",
               "RelativeToolTip": "Customers\\Controllers\\CustomerProductController.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAApwHQAAABTAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T11:05:50.193Z",
               "EditorCaption": ""

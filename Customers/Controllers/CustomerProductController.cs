@@ -121,6 +121,7 @@ namespace Customers.Controllers
             {
                 return BadRequest("Error! Couldn't Refresh Table!");
             }
+
         }
 
         [HttpDelete("{id}")]
