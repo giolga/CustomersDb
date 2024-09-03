@@ -25,7 +25,7 @@ namespace Customers.Controllers
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
 
-            var products = await connection.QueryAsync("SELECT * FROM Product");
+            var products = await connection.QueryAsync("SELECT * FROM ProductTb");
 
             try
             {
@@ -42,7 +42,7 @@ namespace Customers.Controllers
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            var product = await connection.QueryFirstAsync<Product>("SELECT * FROM Product WHERE Id = @id", new {id = id});
+            var product = await connection.QueryFirstAsync<Product>("SELECT * FROM ProductTb WHERE Id = @id", new { id = id });
 
             try
             {
@@ -59,22 +59,24 @@ namespace Customers.Controllers
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            await connection.ExecuteAsync("INSERT INTO Product (Name) VALUES(@Name)", productDto);
+            await connection.ExecuteAsync("INSERT INTO ProductTb (Name) VALUES(@Name)", productDto);
 
             return Ok();
         }
 
         [HttpPut]
-        public async Task<ActionResult<Product>> UpdateProduct(int id,  Product product)
+        public async Task<ActionResult<Product>> UpdateProduct(int id, ProductDTO product)
         {
-            if(id != product.Id)
+            SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
+
+            var productExists = await connection.QueryFirstOrDefaultAsync<Product>("SELECT * FROM ProductTb WHERE Id = @id", new { id = id });
+
+            if (productExists == null)
             {
-                return BadRequest($"Product Id: {product.Id} and input id {id} Doesn't Match!");
+                return BadRequest("No such product exists in my precious Db");
             }
 
-            SqlConnection connection = new SqlConnection( _config.GetConnectionString("Default"));
-
-            await connection.ExecuteAsync("UPDATE Product SET Name = @Name WHERE Id = @id", new {Name = product.Name, id = id});
+            await connection.ExecuteAsync("UPDATE ProductTb SET Name = @name WHERE Id = @id", new { name = product.Name, id = id });
 
             return Ok();
         }
@@ -84,13 +86,13 @@ namespace Customers.Controllers
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            var product = await connection.QueryFirstAsync<Product>("SELECT * FROM Product WHERE Id = @Id", new {Id = id});
-            if(product == null)
+            var product = await connection.QueryFirstAsync<Product>("SELECT * FROM ProductTb WHERE Id = @Id", new { Id = id });
+            if (product == null)
             {
-                return NotFound("No such customer exists in my precious Db");
+                return NotFound("No such product exists in my precious Db");
             }
 
-            await connection.ExecuteAsync("DELETE FROM Product WHERE Id = @Id", new {Id = id});
+            await connection.ExecuteAsync("DELETE FROM ProductTb WHERE Id = @Id", new { Id = id });
 
             return Ok(); // CHAMA!!!
         }

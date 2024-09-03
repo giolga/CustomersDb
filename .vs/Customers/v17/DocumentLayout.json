@@ -1,27 +1,15 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\GioLGA\\Desktop\\Customers\\",
+  "WorkspaceRootPath": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/KUMI_KUMI/CustomerDB/True/SqlTable/dbo.CustomerProduct.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomerProductsTb.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/KUMI_KUMI/CustomerDB/True/SqlTable/dbo.Customer.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.ProductTb.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/KUMI_KUMI/CustomerDB/True/SqlTable/dbo.Product.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\giolga\\desktop\\customers\\customers\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\giolga\\desktop\\customers\\customers\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|c:\\users\\giolga\\desktop\\customers\\customers\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D592DA6-6528-4F2A-9D9F-8AAC951C07CF}|Customers\\Customers.csproj|solutionrelative:customers\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomersTb.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +22,33 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.CustomerProduct [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/KUMI_KUMI/CustomerDB/True/SqlTable/dbo.CustomerProduct.sql",
-              "ToolTip": "dbo.CustomerProduct [Data]",
+              "DocumentIndex": 1,
+              "Title": "dbo.ProductTb [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.ProductTb.sql",
+              "ToolTip": "dbo.ProductTb [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-12T18:49:21.105Z",
+              "WhenOpened": "2024-09-03T09:07:01.052Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.Product [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/KUMI_KUMI/CustomerDB/True/SqlTable/dbo.Product.sql",
-              "ToolTip": "dbo.Product [Data]",
+              "Title": "dbo.CustomersTb [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomersTb.sql",
+              "ToolTip": "dbo.CustomersTb [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-12T18:49:14.299Z",
+              "WhenOpened": "2024-09-03T09:06:57.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Customer [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/KUMI_KUMI/CustomerDB/True/SqlTable/dbo.Customer.sql",
-              "ToolTip": "dbo.Customer [Data]",
+              "DocumentIndex": 0,
+              "Title": "dbo.CustomerProductsTb [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MikeyPC_EL_KUMI/CustomerDB/sa/SqlTable/dbo.CustomerProductsTb.sql",
+              "ToolTip": "dbo.CustomerProductsTb [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-12T18:49:04.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Customers\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Models\\Product.cs",
-              "RelativeToolTip": "Customers\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:48:31.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Customers\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Models\\Customer.cs",
-              "RelativeToolTip": "Customers\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:48:25.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\DTOs\\ProductDTO.cs",
-              "RelativeDocumentMoniker": "Customers\\DTOs\\ProductDTO.cs",
-              "ToolTip": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\DTOs\\ProductDTO.cs",
-              "RelativeToolTip": "Customers\\DTOs\\ProductDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:48:21.816Z",
+              "WhenOpened": "2024-09-03T09:06:18.544Z",
               "EditorCaption": ""
             }
           ]

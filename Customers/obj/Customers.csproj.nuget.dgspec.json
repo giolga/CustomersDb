@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Customers.csproj": {}
+    "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Customers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Customers.csproj": {
+    "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Customers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Customers.csproj",
+        "projectUniqueName": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Customers.csproj",
         "projectName": "Customers",
-        "projectPath": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\Customers.csproj",
-        "packagesPath": "C:\\Users\\GioLGA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GioLGA\\Desktop\\Customers\\Customers\\obj\\",
+        "projectPath": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\Customers.csproj",
+        "packagesPath": "C:\\Users\\Mikey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mikey\\Desktop\\CustomersDb\\Customers\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\GioLGA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Mikey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,6 +50,26 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -82,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

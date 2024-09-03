@@ -23,7 +23,7 @@ namespace Customers.Controllers
         {
             var connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            var customers = await connection.QueryAsync<Customer>("SELECT * FROM Customer");
+            var customers = await connection.QueryAsync<Customer>("SELECT * FROM CustomersTb");
 
             return Ok(customers);
         }
@@ -33,11 +33,11 @@ namespace Customers.Controllers
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            var customer = await connection.QueryFirstOrDefaultAsync<Customer>("SELECT * FROM Customer WHERE Id = @id", new { id = id });
+            var customer = await connection.QueryFirstOrDefaultAsync<Customer>("SELECT * FROM CustomersTb WHERE Id = @id", new { id = id });
 
             if (customer == null)
             {
-                return NotFound($"Customer with the id {id} not found. Try Again!");
+                return NotFound($"CustomersTb with the id {id} not found. Try Again!");
             }
 
             return Ok(customer);
@@ -47,7 +47,7 @@ namespace Customers.Controllers
         public async Task<ActionResult<Customer>> InsertCustomer(CustomerDTO customerDto)
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
-            var insertCustomer = await connection.ExecuteAsync("INSERT INTO Customer (FirstName, LastName) VALUES(@FirstName, @LastName)", customerDto);
+            var insertCustomer = await connection.ExecuteAsync("INSERT INTO CustomersTb (FirstName, LastName) VALUES(@FirstName, @LastName)", customerDto);
 
             return Ok(insertCustomer);
         }
@@ -57,16 +57,16 @@ namespace Customers.Controllers
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            var customerExists = await connection.QueryFirstOrDefaultAsync<Customer>("SELECT * FROM Customer WHERE Id = @id", new { id = id });
+            var customerExists = await connection.QueryFirstOrDefaultAsync<Customer>("SELECT * FROM CustomersTb WHERE Id = @id", new { id = id });
 
             if (customerExists == null)
             {
                 return BadRequest("No such customer exists in my precious Db");
             }
 
-            await connection.ExecuteAsync("UPDATE Customer SET FirstName = @FirstName, LastName = @LastName WHERE Id = @id", new { FirstName = customerDto.FirstName, LastName = customerDto.LastName, id = id });
+            await connection.ExecuteAsync("UPDATE CustomersTb SET FirstName = @FirstName, LastName = @LastName WHERE Id = @id", new { FirstName = customerDto.FirstName, LastName = customerDto.LastName, id = id });
 
-            return Ok($"Customer with Id {id} was successfully updated! (CHAMA!)");
+            return Ok($"CustomersTb with Id {id} was successfully updated! (CHAMA!)");
         }
 
         [HttpDelete]
@@ -74,14 +74,14 @@ namespace Customers.Controllers
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
 
-            var customerExists = await connection.QueryFirstOrDefaultAsync<Customer>("SELECT * FROM Customer WHERE Id = @id", new { id = customerId });
+            var customerExists = await connection.QueryFirstOrDefaultAsync<Customer>("SELECT * FROM CustomersTb WHERE Id = @id", new { id = customerId });
 
             if (customerExists == null)
             {
                 return BadRequest("No such customer exists in my precious Db");
             }
 
-            await connection.ExecuteAsync("DELETE FROM Customer WHERE Id = @id", new { id = customerId });
+            await connection.ExecuteAsync("DELETE FROM CustomersTb WHERE Id = @id", new { id = customerId });
 
             return Ok($"Customer with the Id {customerId} was deleted successfully! (CHAMA!)");
         }
