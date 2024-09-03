@@ -82,6 +82,23 @@ namespace Customers.Controllers
         }
 
         [HttpDelete]
+        public async Task<ActionResult> DeleteTable()
+        {
+            SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
+
+            try
+            {
+                await connection.ExecuteAsync("DELETE ProductTb");
+                await connection.ExecuteAsync(@"DBCC CHECKIDENT('ProductTb', RESEED, 0);");
+                return Ok("Table Refreshed Successfully!");
+            }
+            catch (Exception)
+            {
+                return BadRequest("Error! Couldn't Refresh Table!");
+            }
+        }
+
+        [HttpDelete("{id}")]
         public async Task<ActionResult<Product>> DeleteProduct(int id)
         {
             SqlConnection connection = new SqlConnection(_config.GetConnectionString("Default"));
